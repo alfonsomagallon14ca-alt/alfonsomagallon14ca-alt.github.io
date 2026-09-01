@@ -1,15 +1,271 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfonso Magallón — Portfolio</title>
+
+```
+<title>Alfonso Magallón — Ilustrador, Diseñador Gráfico y Muralista</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f0e8;
+        color: #171717;
+        line-height: 1.5;
+    }
+
+    header {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+
+    nav a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        max-width: 1000px;
+        margin: auto 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(4rem, 12vw, 10rem);
+        line-height: 0.85;
+        letter-spacing: -0.06em;
+    }
+
+    .hero p {
+        margin-top: 30px;
+        font-size: 1.3rem;
+        max-width: 500px;
+    }
+
+    .scroll {
+        font-size: 0.85rem;
+        opacity: 0.6;
+    }
+
+    section {
+        padding: 120px 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    section h2 {
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+
+    .about {
+        max-width: 700px;
+        font-size: 1.4rem;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .project {
+        min-height: 350px;
+        background: #d8d4c8;
+        display: flex;
+        align-items: flex-end;
+        padding: 25px;
+    }
+
+    .project h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact h2 {
+        font-size: clamp(3rem, 8vw, 7rem);
+        line-height: 0.9;
+    }
+
+    .contact a {
+        margin-top: 30px;
+        color: inherit;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.85rem;
+    }
+
+    @media (max-width: 700px) {
+
+        header {
+            padding: 20px;
+        }
+
+        nav ul {
+            gap: 12px;
+        }
+
+        nav a {
+            font-size: 0.8rem;
+        }
+
+        .hero h1 {
+            font-size: 22vw;
+        }
+
+        section {
+            padding: 80px 20px;
+        }
+
+        section h2 {
+            font-size: 2.3rem;
+        }
+
+        .projects {
+            grid-template-columns: 1fr;
+        }
+
+        .project {
+            min-height: 280px;
+        }
+
+        footer {
+            padding: 20px;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+</style>
+```
+
 </head>
 
 <body>
 
-    <h1>Alfonso Magallón</h1>
-    <p>Illustrador · Diseñador Gráfico · Muralista</p>
+```
+<header>
+
+    <nav>
+        <div class="logo">MERACHO</div>
+
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>MERACHO</h1>
+        <p>Ilustrador · Diseñador Gráfico · Muralista</p>
+    </div>
+
+    <div class="scroll">
+        ↓ Explora mi trabajo
+    </div>
+
+</header>
+
+
+<section id="sobre-mi">
+
+    <h2>Sobre mí</h2>
+
+    <p class="about">
+        Soy Alfonso Magallón, ilustrador, diseñador gráfico y muralista.
+        Desarrollo proyectos visuales que combinan ilustración, diseño
+        y una identidad gráfica propia.
+    </p>
+
+</section>
+
+
+<section id="trabajos">
+
+    <h2>Trabajos</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Ilustración</h3>
+        </div>
+
+        <div class="project">
+            <h3>Diseño Gráfico</h3>
+        </div>
+
+        <div class="project">
+            <h3>Murales</h3>
+        </div>
+
+        <div class="project">
+            <h3>Otros proyectos</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="contacto" class="contact">
+
+    <h2>¿Trabajamos juntos?</h2>
+
+    <a href="mailto:TU-CORREO-AQUI">
+        TU-CORREO-AQUI
+    </a>
+
+</section>
+
+
+<footer>
+    <span>© 2026 MERACHO</span>
+    <span>Alfonso Magallón</span>
+</footer>
+```
 
 </body>
 </html>
