@@ -102,13 +102,18 @@
     }
 
     .project {
-        min-height: 350px;
-        background: #d8d4c8;
-        display: flex;
-        align-items: flex-end;
-        padding: 25px;
-    }
+    min-height: 350px;
+    background: #d8d4c8;
+    position: relative;
+    overflow: hidden;
+}
 
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
     .project h3 {
         font-size: 1.5rem;
     }
