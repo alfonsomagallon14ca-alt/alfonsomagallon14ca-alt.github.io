@@ -1,278 +1,231 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-<title>Alfonso Magallón — Ilustrador, Diseñador Gráfico y Muralista</title>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        background: #f2f0e8;
-        color: #171717;
-        line-height: 1.5;
-    }
-
-    header {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 30px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-
-    nav ul {
-        display: flex;
-        gap: 25px;
-        list-style: none;
-    }
-
-    nav a {
-        color: inherit;
-        text-decoration: none;
-        font-size: 0.95rem;
-    }
-
-    .hero {
-        max-width: 1000px;
-        margin: auto 0;
-    }
-
-    .hero h1 {
-        font-size: clamp(4rem, 12vw, 10rem);
-        line-height: 0.85;
-        letter-spacing: -0.06em;
-    }
-
-    .hero p {
-        margin-top: 30px;
-        font-size: 1.3rem;
-        max-width: 500px;
-    }
-
-    .scroll {
-        font-size: 0.85rem;
-        opacity: 0.6;
-    }
-
-    section {
-        padding: 120px 30px;
-        max-width: 1200px;
-        margin: auto;
-    }
-
-    section h2 {
-        font-size: 3rem;
-        margin-bottom: 50px;
-    }
-
-    .about {
-        max-width: 700px;
-        font-size: 1.4rem;
-    }
-
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
-    .project {
-    min-height: 350px;
-    background: #d8d4c8;
-    position: relative;
-    overflow: hidden;
-}
-
-.project img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-    .project h3 {
-        font-size: 1.5rem;
-    }
-
-    .contact {
-        min-height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .contact h2 {
-        font-size: clamp(3rem, 8vw, 7rem);
-        line-height: 0.9;
-    }
-
-    .contact a {
-        margin-top: 30px;
-        color: inherit;
-        font-size: 1.2rem;
-    }
-
-    footer {
-        padding: 30px;
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.85rem;
-    }
-
-    @media (max-width: 700px) {
-
-        header {
-            padding: 20px;
-        }
-
-        nav ul {
-            gap: 12px;
-        }
-
-        nav a {
-            font-size: 0.8rem;
-        }
-
-        .hero h1 {
-            font-size: 22vw;
-        }
-
-        section {
-            padding: 80px 20px;
-        }
-
-        section h2 {
-            font-size: 2.3rem;
-        }
-
-        .projects {
-            grid-template-columns: 1fr;
-        }
-
-        .project {
-            min-height: 280px;
-        }
-
-        footer {
-            padding: 20px;
-            flex-direction: column;
-            gap: 10px;
-        }
-    }
-</style>
-```
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alfonso Magallón — Diseño Gráfico e Ilustración. Portfolio 2026.">
+  <meta name="theme-color" content="#FDFBF7">
+  <title>Alfonso Magallón — Portfolio 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-```
-<header>
-
-    <nav>
-        <div class="logo">Alfonso Magallón</div>
-
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#trabajos">Trabajos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <div class="hero">
-        <h1>Alfonso Magallón</h1>
-        <p>Ilustrador · Diseñador Gráfico · Muralista</p>
-    </div>
-
-    <div class="scroll">
-        ↓ Explora mi trabajo
-    </div>
-
+<header class="site-header" id="top">
+  <a class="brand" href="#top" aria-label="Volver al inicio">Alfonso Magallón <span>| Portfolio 2026</span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+    <span></span><span></span>
+  </button>
+  <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+    <a href="#identidad">Identidad Gráfica</a>
+    <a href="#ilustracion">Ilustración Comercial</a>
+    <a href="#animacion">Animación</a>
+    <a href="#packaging">Packaging</a>
+    <a class="nav-contact" href="#contacto">Contacto</a>
+  </nav>
 </header>
 
+<main>
+  <section class="hero section-pad">
+    <div class="eyebrow">Diseño Gráfico / Ilustración</div>
+    <h1>Alfonso<br><em>Magallón</em></h1>
+    <p class="hero-subtitle">Portfolio 2026</p>
+    <div class="hero-intro">
+      <div>
+        <span class="section-number">00 / IDENTIDAD</span>
+        <h2>¿Quién soy?</h2>
+      </div>
+      <p>Soy un diseñador e ilustrador panameño, estudiante de 4.º y último año en la Universidad de Panamá. A lo largo de mi carrera, he ido desarrollando una sólida trayectoria tanto en el ámbito universitario como en el sector profesional e independiente.</p>
+    </div>
+  </section>
 
-<section id="sobre-mi">
+  <section class="skills section-pad">
+    <div class="section-heading">
+      <span class="section-number">01 / HABILIDADES</span>
+      <h2>Herramientas</h2>
+    </div>
+    <div class="skills-grid">
+      <article class="skill"><img src="images/1.png" alt="Photoshop"><div><b>Photoshop</b><span>★★★★★</span></div></article>
+      <article class="skill"><img src="images/2.png" alt="Illustrator"><div><b>Illustrator</b><span>★★★★☆</span></div></article>
+      <article class="skill"><img src="images/3.png" alt="After Effects"><div><b>After Effects</b><span>★★★☆☆</span></div></article>
+      <article class="skill"><img src="images/4.png" alt="DaVinci Resolve"><div><b>DaVinci Resolve</b><span>★★★☆☆</span></div></article>
+      <article class="skill"><img src="images/5.png" alt="Figma"><div><b>Figma</b><span>★★★☆☆</span></div></article>
+      <article class="skill"><img src="images/6.png" alt="GitHub"><div><b>GitHub</b><span>★★★★☆</span></div></article>
+      <article class="skill"><img src="images/7.png" alt="Inglés"><div><b>Inglés</b><span>A2</span></div></article>
+    </div>
+  </section>
 
-    <h2>Sobre mí</h2>
-
-    <p class="about">
-        Soy Alfonso Magallón, ilustrador, diseñador gráfico y muralista.
-        Desarrollo proyectos visuales que combinan ilustración, diseño
-        y una identidad gráfica propia.
-    </p>
-
-</section>
-
-
-<section id="trabajos">
-
-    <h2>Trabajos</h2>
-
-    <div class="projects">
-
-        <div class="project">
-             <img src="vision.jpg" alt="Visión">
-             <h3>Ilustración</h3>
-            
-        </div>
-
-        <div class="project">
-            <h3>Diseño Gráfico</h3>
-        </div>
-
-        <div class="project">
-            <h3>Murales</h3>
-        </div>
-
-        <div class="project">
-            <h3>Otros proyectos</h3>
-        </div>
-
+  <section id="identidad" class="work-section identity section-pad">
+    <div class="section-heading">
+      <span class="section-number">02 / TRABAJOS</span>
+      <h2>Identidad Gráfica</h2>
+      <p>Recopilación de proyectos de identidad gráfica y branding.</p>
     </div>
 
-</section>
+    <article class="project">
+      <div class="project-head"><span>01</span><h3>Vivimos en la misma selva</h3><p>Proyecto de identidad gráfica para campaña de diseño social · Proyecto universitario.</p></div>
+      <p class="project-copy">En este proyecto se buscó el desarrollo de una identidad gráfica para una campaña de diseño gráfico cultural. A través de soluciones visuales, se creó la imagen corporativa para un proyecto enfocado en el resguardo y cuidado de la fauna salvaje en Panamá.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/8.png" alt="Logotipo Vivimos en la misma selva" loading="lazy"><figcaption>Logotipo / Campaña</figcaption></figure>
+        <figure><img src="images/10.jpg" alt="Dirección de diseño — realización" loading="lazy"><figcaption>Dirección de diseño / Realización</figcaption></figure>
+        <figure><img src="images/9.jpg" alt="Dirección de diseño — concepto" loading="lazy"><figcaption>Concepto</figcaption><p>Unión de huellas y patas de felinos, reptiles, aves y humanos para representar la armonía y coexistencia entre los seres vivos en Panamá.</p></figure>
+        <figure><img src="images/11.jpg" alt="Colores del logotipo" loading="lazy"><figcaption>Colores del logotipo</figcaption></figure>
+        <figure><img src="images/12.jpg" alt="Texturas" loading="lazy"><figcaption>Texturas</figcaption></figure>
+        <figure><img src="images/13.jpg" alt="Paleta de colores" loading="lazy"><figcaption>Paleta de colores</figcaption><p>Fauna marina, selva y tonos cálidos para aportar un enfoque humanista y cercano.</p></figure>
+      </div>
+      <div class="gallery grid-3">
+        <figure><img src="images/14.jpg" alt="Valla publicitaria" loading="lazy"><figcaption>Valla publicitaria</figcaption></figure>
+        <figure><img src="images/15.jpg" alt="MUPI 1" loading="lazy"><figcaption>MUPI 01</figcaption></figure>
+        <figure><img src="images/16.jpg" alt="MUPI 2" loading="lazy"><figcaption>MUPI 02</figcaption></figure>
+        <figure><img src="images/17.jpg" alt="Material didáctico general" loading="lazy"><figcaption>Material didáctico</figcaption></figure>
+        <figure><img src="images/18.jpg" alt="Versión escolar" loading="lazy"><figcaption>Versión escolar</figcaption></figure>
+        <figure><img src="images/19.jpg" alt="Post de Instagram" loading="lazy"><figcaption>Instagram / Post</figcaption></figure>
+        <figure><img src="images/20.jpg" alt="Carrusel de Instagram" loading="lazy"><figcaption>Instagram / Carrusel</figcaption></figure>
+        <figure><img src="images/21.jpg" alt="Juego 1" loading="lazy"><figcaption>Juego 01</figcaption></figure>
+        <figure><img src="images/22.jpg" alt="Juego 2" loading="lazy"><figcaption>Juego 02</figcaption></figure>
+        <figure><img src="images/23.jpg" alt="Juego 3" loading="lazy"><figcaption>Juego 03</figcaption></figure>
+        <figure><img src="images/24.jpg" alt="Mural para escuela" loading="lazy"><figcaption>Mural para escuela</figcaption></figure>
+      </div>
+    </article>
 
+    <article class="project">
+      <div class="project-head"><span>02</span><h3>Alas del Istmo</h3><p>Identidad gráfica para festival cultural de avistamiento de aves · Proyecto universitario.</p></div>
+      <p class="project-copy">Identidad gráfica desarrollada para un festival de avistamiento de aves celebrado anualmente en septiembre en el Parque Omar. El objetivo del evento es la concienciación sobre la avifauna panameña y su representación visual efectiva.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/25.png" alt="Logotipo Alas del Istmo" loading="lazy"><figcaption>Logotipo</figcaption></figure>
+        <figure><img src="images/26.png" alt="Dirección de diseño" loading="lazy"><figcaption>Dirección de diseño / Realización</figcaption></figure>
+        <figure><img src="images/27.jpg" alt="Concepto Alas del Istmo" loading="lazy"><figcaption>Concepto</figcaption><p>Binoculares, aves y movimiento como ejes conceptuales.</p></figure>
+        <figure><img src="images/28.jpg" alt="Colores" loading="lazy"><figcaption>Colores</figcaption></figure>
+        <figure><img src="images/29.jpg" alt="Texturas" loading="lazy"><figcaption>Texturas</figcaption></figure>
+        <figure><img src="images/30.jpg" alt="Paleta extraída de la avifauna panameña" loading="lazy"><figcaption>Paleta</figcaption></figure>
+      </div>
+      <div class="gallery grid-3">
+        <figure><img src="images/31.jpg" alt="Valla" loading="lazy"><figcaption>Valla</figcaption></figure>
+        <figure><img src="images/32.jpg" alt="MUPI" loading="lazy"><figcaption>MUPI</figcaption></figure>
+        <figure><img src="images/33.jpg" alt="Material didáctico general" loading="lazy"><figcaption>Material didáctico</figcaption></figure>
+        <figure><img src="images/34.png" alt="Valla didáctica" loading="lazy"><figcaption>Valla</figcaption></figure>
+        <figure><img src="images/35.jpg" alt="Vinil para autobús" loading="lazy"><figcaption>Vinil para autobús</figcaption></figure>
+        <figure><img src="images/36.jpg" alt="Mascota Cotorro" loading="lazy"><figcaption>Mascota oficial / Cotorro</figcaption></figure>
+        <figure><img src="images/37.jpg" alt="Variaciones de Cotorro" loading="lazy"><figcaption>Variaciones</figcaption></figure>
+        <figure><img src="images/38.jpg" alt="Infraestructura" loading="lazy"><figcaption>Infraestructura</figcaption></figure>
+        <figure><img src="images/39.jpg" alt="Señalética" loading="lazy"><figcaption>Señalética</figcaption></figure>
+        <figure><img src="images/40.jpg" alt="Carrusel Instagram" loading="lazy"><figcaption>Carrusel IG</figcaption></figure>
+        <figure><img src="images/41.jpg" alt="Reel Instagram" loading="lazy"><figcaption>Reels IG</figcaption></figure>
+      </div>
+    </article>
 
-<section id="contacto" class="contact">
+    <article class="project">
+      <div class="project-head"><span>03</span><h3>BeeFest</h3><p>Identidad gráfica para el Festival de Abejas Meliponas en El Valle de Antón · 2025–2026.</p></div>
+      <p class="project-copy">BeeFest es un festival anual centrado en las abejas meliponas y su rol ecológico. El proyecto buscó reflejar el espíritu del evento e inspirar a través de una marca gráfica orgánica y cercana.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/42.png" alt="Logotipo BeeFest" loading="lazy"><figcaption>Logotipo</figcaption></figure>
+        <figure><img src="images/43.jpg" alt="Paleta de colores BeeFest" loading="lazy"><figcaption>Paleta de colores</figcaption><p>Tonos de abejas con matices tierra y cian.</p></figure>
+        <figure><img src="images/44.jpg" alt="Aplicaciones para redes sociales" loading="lazy"><figcaption>Aplicaciones RRSS</figcaption></figure>
+        <figure><img src="images/45.jpg" alt="Piezas impresas" loading="lazy"><figcaption>Piezas impresas</figcaption></figure>
+      </div>
+    </article>
+  </section>
 
-    <h2>¿Trabajamos juntos?</h2>
+  <section id="ilustracion" class="work-section section-pad">
+    <div class="section-heading"><span class="section-number">03 / TRABAJOS</span><h2>Ilustración Comercial</h2></div>
 
-    <a href="mailto:TU-CORREO-AQUI">
-        TU-CORREO-AQUI
-    </a>
+    <article class="project">
+      <div class="project-head"><span>01</span><h3>Café Durán</h3><p>Ilustración y diseño de taza · Taza Locura 2026.</p></div>
+      <p class="project-copy">Propuesta que busca exaltar la labor del caficultor panameño. La ilustración narra el recorrido del café, desde las cosechas en el campo hasta su llegada a la ciudad para ser disfrutado por trabajadores, educadores y la sociedad panameña.</p>
+      <div class="media-wide"><video src="images/46.mp4" autoplay loop muted playsinline controls preload="metadata"></video><span>Video presentación</span></div>
+      <div class="gallery grid-2">
+        <figure><img src="images/47.jpg" alt="Arte desplegado Café Durán" loading="lazy"><figcaption>Arte desplegado / Caficultor</figcaption></figure>
+        <figure class="detail-stack"><img src="images/48.jpg" alt="Detalle 1" loading="lazy"><img src="images/49.jpg" alt="Detalle 2" loading="lazy"><img src="images/50.jpg" alt="Detalle 3" loading="lazy"><figcaption>Detalles</figcaption></figure>
+        <figure><img src="images/51.jpg" alt="Mockup 1 Café Durán" loading="lazy"><figcaption>Mockup 01</figcaption></figure>
+        <figure><img src="images/52.jpg" alt="Mockup 2 Café Durán" loading="lazy"><figcaption>Mockup 02</figcaption></figure>
+      </div>
+    </article>
 
-</section>
+    <article class="project">
+      <div class="project-head"><span>02</span><h3>KFC</h3><p>Diseño de bucket · KFC Bucket Challenge 2025.</p></div>
+      <p class="project-copy">Propuesta visual que resalta la identidad panameña mediante una ilustración que integra elementos representativos de nuestra cultura, fauna y flora local.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/53.jpg" alt="Mockup KFC" loading="lazy"><figcaption>Mockup en producto</figcaption></figure>
+        <figure><img src="images/54.jpg" alt="Arte final KFC" loading="lazy"><figcaption>Arte final</figcaption></figure>
+        <figure><img src="images/55.jpg" alt="Detalle KFC 1" loading="lazy"><figcaption>Detalle 01</figcaption></figure>
+        <figure><img src="images/56.jpg" alt="Detalle KFC 2" loading="lazy"><figcaption>Detalle 02</figcaption></figure>
+      </div>
+    </article>
 
+    <article class="project">
+      <div class="project-head"><span>03</span><h3>BeeFest: Stickers de Polinizadores</h3><p>Ilustraciones de especies polinizadoras · BeeFest 2025.</p></div>
+      <p class="project-copy">Diseños de stickers orientados a resaltar la belleza y el valor ecológico de los polinizadores nativos.</p>
+      <div class="gallery grid-3">
+        <figure><img src="images/57.jpg" alt="Abeja Eulaema cingulata" loading="lazy"><figcaption>Abeja / <i>Eulaema cingulata</i></figcaption></figure>
+        <figure><img src="images/58.jpg" alt="Avispa Polistes dominula" loading="lazy"><figcaption>Avispa / <i>Polistes dominula</i></figcaption></figure>
+        <figure><img src="images/59.jpg" alt="Mariposa Siproeta stelenes" loading="lazy"><figcaption>Mariposa / <i>Siproeta stelenes</i></figcaption></figure>
+      </div>
+    </article>
+  </section>
 
-<footer>
-    <span>© 2026 MERACHO</span>
-    <span>Alfonso Magallón</span>
-</footer>
-```
+  <section id="animacion" class="work-section section-pad">
+    <div class="section-heading"><span class="section-number">04 / TRABAJOS</span><h2>Animación</h2></div>
+    <article class="project">
+      <div class="project-head"><span>01</span><h3>Tierra Fértil</h3><p>Ilustración y animación personal · After Effects.</p></div>
+      <div class="media-wide"><video src="images/60.mp4" autoplay loop muted playsinline controls preload="metadata"></video></div>
+    </article>
+    <article class="project">
+      <div class="project-head"><span>02</span><h3>Animación Four Loko</h3><p>Animación e ilustración ganadora del Four Loko Print 2025.</p></div>
+      <p class="project-copy">Combina la energía de Four Loko con la esencia panameña.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/61.jpg" alt="Ilustración original Four Loko" loading="lazy"><figcaption>Ilustración original</figcaption></figure>
+        <div class="media-card"><video src="images/62.mp4" autoplay loop muted playsinline controls preload="metadata"></video><span>Animación / Video</span></div>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-head"><span>03</span><h3>Animación Blasphemous</h3><p>Póster y animación fan art · After Effects.</p></div>
+      <p class="project-copy">Póster y animación estilo fan art inspirados en el videojuego indie Blasphemous.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/63.jpg" alt="Póster Blasphemous" loading="lazy"><figcaption>Ilustración original</figcaption></figure>
+        <div class="media-card"><video src="images/64.mp4" autoplay loop muted playsinline controls preload="metadata"></video><span>Animación / Video</span></div>
+      </div>
+    </article>
+  </section>
 
+  <section id="packaging" class="work-section section-pad">
+    <div class="section-heading"><span class="section-number">05 / TRABAJOS</span><h2>Packaging</h2></div>
+    <article class="project">
+      <div class="project-head"><span>01</span><h3>Pa' la Piña</h3><p>Diseño de empaque para cerveza artesanal · Cervecería Clandestina.</p></div>
+      <p class="project-copy">Mezcla la actitud de Cervecería Clandestina con el perfil frutal de la cerveza de piña.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/65.jpg" alt="Mockup principal Pa' la Piña" loading="lazy"><figcaption>Mockup principal</figcaption></figure>
+        <figure><img src="images/66.jpg" alt="Mockup secundario Pa' la Piña" loading="lazy"><figcaption>Mockup secundario / Paleta reducida</figcaption></figure>
+        <figure class="wide"><img src="images/67.jpg" alt="Arte final Pa' la Piña" loading="lazy"><figcaption>Arte final</figcaption></figure>
+      </div>
+    </article>
+    <article class="project">
+      <div class="project-head"><span>02</span><h3>Balboa Roja</h3><p>Campaña ficticia para Cervecería Nacional · Edición especial Mundial 2026.</p></div>
+      <p class="project-copy">Diseño de lata coleccionable proyectado ante la participación histórica de Panamá en el Mundial. Busca transmitir la pasión y fuerza de la fanaticada panameña.</p>
+      <div class="gallery grid-2">
+        <figure><img src="images/68.jpg" alt="Mockup Balboa Roja" loading="lazy"><figcaption>Mockup del diseño</figcaption></figure>
+        <figure><img src="images/69.jpg" alt="Arte plano Balboa Roja" loading="lazy"><figcaption>Arte plano</figcaption></figure>
+        <figure><img src="images/70.jpg" alt="Póster Balboa Roja" loading="lazy"><figcaption>Póster publicitario</figcaption></figure>
+        <figure><img src="images/71.jpg" alt="Subelemento Key Visual" loading="lazy"><figcaption>Subelemento / Key Visual</figcaption></figure>
+        <figure><img src="images/72.jpg" alt="Mockup secundario Balboa Roja" loading="lazy"><figcaption>Mockup secundario</figcaption></figure>
+      </div>
+    </article>
+  </section>
+
+  <section id="contacto" class="contact section-pad">
+    <span class="section-number">06 / CONTACTO</span>
+    <h2>¡Trabajemos<br><em>juntos!</em></h2>
+    <p>Dale vida a tu proyecto. Hablemos, planeemos y concretemos.</p>
+    <div class="contact-list">
+      <a href="mailto:meeraachoo@gmail.com"><span>Correo</span>meeraachoo@gmail.com</a>
+      <a href="tel:+50761178561"><span>Teléfono</span>+507 6117-8561</a>
+      <a href="https://www.instagram.com/meraacho/" target="_blank" rel="noopener"><span>Instagram</span>@meraacho ↗</a>
+      <a href="https://www.behance.net/alfonsomagalln135" target="_blank" rel="noopener"><span>Behance</span>alfonsomagalln135 ↗</a>
+    </div>
+  </section>
+</main>
+
+<footer><span>Alfonso Magallón — Portfolio 2026</span><a href="#top">Volver arriba ↑</a></footer>
+<script src="script.js"></script>
 </body>
 </html>
